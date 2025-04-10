@@ -6,6 +6,30 @@
   padding: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover .addcards {
+    opacity: 1;
+    transition: 0.3s
+  }
+  .addcards {
+    background-color: #000;
+    width: 100%;
+    height: 41px;
+    position: absolute;
+    border-radius: 0 0 4px 4px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    top: 150px;
+    a {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
   .discount-badge {
     position: absolute;
     top: 10px;
@@ -27,24 +51,6 @@
     justify-content: center;
     margin-bottom: 15px;
     border-radius: 4px;
-    .addcards {
-      background-color: #000;
-      width: 100%;
-      height: 41px;
-      position: absolute;
-      border-radius: 0 0 4px 4px;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      top: 150px;
-      a {
-        color: #fff;
-        font-size: 16px;
-        font-weight: 500;
-      }
-    }
     .image-placeholder {
       color: #888;
       font-size: 14px;

@@ -83,19 +83,41 @@
                         position: absolute;
                   }
                   .days{
-                        left: 713px;
+                        left: 700px;
                   }
                   .hours{
-                        left: 790px;
+                        left: 760px;
                   }
                   .span_left{
                         top: 710px;
                   }
                   .minutes{
-                        left: 870px;
+                        left: 840px;
                   }
                   .seconds{
-                        left: 940px;
+                        left: 920px;
+                  }
+            }
+            .home_card{
+                  display: flex;
+                  align-items: center;
+                  gap: 30px;
+                  overflow-x: scroll;
+            }
+            .home_btn{
+                  background-color: #DB4444;
+                  text-align: center;
+                  margin-left: 463px;
+                  color: #fff;
+                  border-radius: 4px;
+                  padding: 16px 48px;
+                  font-size: 16px;
+                  border: transparent;
+                  cursor: pointer;
+                  margin-top: 60px;
+                  margin-bottom: 60px;
+                  &:active{
+                  background-color: #db444493;
                   }
             }
       }

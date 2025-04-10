@@ -3,6 +3,8 @@ import { IoIosArrowForward } from "react-icons/io";
 import Swiper from '../../components/swipper/swipper';
 import './home.scss';
 import Cards from '../../components/cards/cards';
+import img from '../../assets/index.js'; // ⚠️ shuni unutma!
+import DiscountContent from '../../components/categories__cards/Categories_card.jsx';
 
 export default function Home() {
   const FOUR_DAYS_IN_MS = 4 * 24 * 60 * 60 * 1000;
@@ -10,7 +12,6 @@ export default function Home() {
   const [timeLeft, setTimeLeft] = useState(0);
 
   useEffect(() => {
-    // Tekshiramiz: localStorage'da targetDate bormi
     const savedDate = localStorage.getItem('targetDate');
     let finalTargetDate;
 
@@ -34,7 +35,7 @@ export default function Home() {
       if (distance <= 0) {
         clearInterval(interval);
         setTimeLeft(0);
-        localStorage.removeItem('targetDate'); // Tugasa tozalanadi
+        localStorage.removeItem('targetDate');
       } else {
         setTimeLeft(distance);
       }
@@ -51,6 +52,13 @@ export default function Home() {
 
     return { days, hours, minutes, seconds };
   };
+
+  const CategoryCard = ({ image, title, isActive }) => (
+    <div className={`w-1/6 p-4 ${isActive ? 'border-4 border-blue-500' : ''}`}>
+      <img src={image} alt={title} className="w-full h-auto" />
+      <p className="text-center text-xl mt-2">{title}</p>
+    </div>
+  );
 
   const { days, hours, minutes, seconds } = formatTime(timeLeft);
 
@@ -89,7 +97,16 @@ export default function Home() {
             </section>
           </div>
           <div className="home_card">
-            <Cards />
+            <Cards img={img.gamepat} title="HAVIT HV-G92 Gamepad" title2="$120" title3="$160" title4="(88)" title5="★★★★★" />
+            <Cards img={img.klaviyatura} title="AK-900 Wired Keyboard" title2="$960" title3="$1160" title4="(75)" title5="★★★★" />
+            <Cards img={img.monitor} title="IPS LCD Gaming Monitor" title2="$370" title3="$400" title4="(99)" title5="★★★★" />
+            <Cards img={img.stol} title="S-Series Comfort Chair " title2="$375" title3="$400" title4="(75)" title5="★★★★" />
+            <Cards img={img.klaviyatura} title="AK-900 Wired Keyboard" title2="$960" title3="$1160" title4="(75)" title5="★★★★" />
+          </div>
+          <button className='home_btn'>View All Products</button>
+          <hr style={{ marginBottom: "70px" }} />
+          <div>
+            <DiscountContent />
           </div>
         </div>
       </div>
