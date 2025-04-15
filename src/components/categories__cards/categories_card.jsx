@@ -1,8 +1,9 @@
 import React from 'react';
-
+import './categories_card.scss';
+import img from '../../assets/index.js';
 
 const CategoryCard = ({ image, title, isActive }) => (
-  <div className={`categories_card_1 ${isActive ? 'active_card' : ''}`}>
+  <div className={`categories_card_1 ${isActive ? '' : ''}`}>
     <img src={image} alt={title} />
     <p className="categories_card_h">{title}</p>
   </div>
@@ -10,12 +11,12 @@ const CategoryCard = ({ image, title, isActive }) => (
 
 const DiscountContent = () => {
   const categories = [
-    { image: '', title: 'Phones' },
-    { image: '../img/Category-Computer.png', title: 'Computers' },
-    { image: '../img/Category-SmartWatch.png', title: 'SmartWatch' },
-    { image: '../img/Category-Camera.png', title: 'Camera', isActive: true },
-    { image: '../img/Category-Headphone.png', title: 'HeadPhones' },
-    { image: '../img/Category-Gamepad.png', title: 'Gaming' },
+    { image: img.phone, title: 'Phones' },
+    { image: img.compyuter, title: 'Computers' },
+    { image: img.smartwatch, title: 'SmartWatch' },
+    { image: img.camera, title: 'Camera', isActive: true },
+    { image: img.headphone, title: 'HeadPhones' },
+    { image: img.gamepad, title: 'Gaming' },
   ];
 
   return (

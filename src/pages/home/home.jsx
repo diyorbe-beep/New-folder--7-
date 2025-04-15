@@ -5,7 +5,7 @@ import './home.scss';
 import Cards from '../../components/cards/cards';
 import img from '../../assets/index.js'; // ⚠️ shuni unutma!
 import DiscountContent from '../../components/categories__cards/Categories_card.jsx';
-
+import BestSellCard from '../../components/best_sell_card/best_sell_card.jsx';
 export default function Home() {
   const FOUR_DAYS_IN_MS = 4 * 24 * 60 * 60 * 1000;
   const [targetDate, setTargetDate] = useState(null);
@@ -107,6 +107,9 @@ export default function Home() {
           <hr style={{ marginBottom: "70px" }} />
           <div>
             <DiscountContent />
+          </div>
+          <div className="best_sell_card">
+            <BestSellCard />
           </div>
         </div>
       </div>
