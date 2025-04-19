@@ -1,0 +1,39 @@
+.services {
+    &_content {
+      margin-bottom: 140px;
+    }
+  
+    &_cards {
+      display: flex;
+      align-items: center;
+      gap: 88px;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    &_card1 {
+      text-align: center;
+  
+      &_up {
+        background-color: $dark-gray;
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 100px;
+      }
+  
+      .services_card_1_up_litte {
+        background-color: $dark-color;
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }

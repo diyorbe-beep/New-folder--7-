@@ -13,3 +13,13 @@
   max-width: 1170px;
   margin: 0 auto;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+

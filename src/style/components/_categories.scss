@@ -1,0 +1,44 @@
+.categories {
+    &_down {
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 70px;
+  
+      .categories_card_1 {
+        width: 170px;
+        height: 145px;
+        border: 1px solid;
+        border-radius: 4px;
+        align-items: center;
+        padding: 25px;
+        text-align: center;
+        transition: 0.3s linear;
+  
+        &:hover {
+          background-color: $primary-color;
+          color: $light-color;
+          transform: scale(1.1);
+          cursor: pointer;
+        }
+  
+        &.active_card {
+          background: $primary-color;
+          color: $light-color;
+        }
+  
+        .categories_card_h {
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+    }
+  
+    &_hr {
+      margin-bottom: 70px;
+    }
+  }

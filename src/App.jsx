@@ -1,12 +1,16 @@
 import React from 'react';
-import Navbar from './components/navbar/Navbar'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home/home';
 
-export default function App() {
+function App() {
   return (
-    <div>
-      <Navbar></Navbar>
-      <Home></Home>
-    </div>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* Add other routes here */}
+      </Routes>
+    </Router>
+  );
 }
+
+export default App;

@@ -1,0 +1,78 @@
+.featured {
+    &_up {
+      margin-top: 140px;
+    }
+  
+    &_down {
+      display: flex;
+      margin-top: 60px;
+      gap: 30px;
+    }
+  
+    &_card1 {
+      width: 570px;
+      height: 600px;
+      background: url(../../assets/ps5.png), linear-gradient($dark-color, $dark-color);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      padding: 0px 32px;
+      padding-top: 446px;
+      cursor: pointer;
+  
+      &_h3 {
+        color: #fafafa;
+        font-family: "Inter", sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+      }
+  
+      &_p {
+        color: #fafafa;
+        width: 242px;
+        margin: 16px 0;
+      }
+  
+      &_a {
+        color: #fafafa;
+        text-decoration: none;
+        border-bottom: 1px solid #fafafa;
+      }
+    }
+  
+    &_content {
+      margin-bottom: 140px;
+    }
+  
+    &_card2 {
+      padding: 24px;
+      width: 570px;
+      padding-top: 135px;
+      padding-bottom: 24px;
+      height: 284px;
+      background: url(../img/attractive-woman-wearing-hat-posing-black-background\ 1.png), linear-gradient(#0D0D0D, #0D0D0D);
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+  
+    &_card3 {
+      width: 270px;
+      height: 284px;
+      margin-top: 32px;
+      background: url(../img/Frame\ 707.png), linear-gradient(#0D0D0D, #0D0D0D);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      padding: 0 24px;
+      padding-top: 144px;
+    }
+  
+    &_cards2 {
+      display: flex;
+      gap: 30px;
+    }
+  
+    &_card4 {
+      background: url(../img/Frame\ 706.png), linear-gradient(#0D0D0D, #0D0D0D);
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+  }

@@ -14,6 +14,9 @@ import culer from "./culer.png";
 import kurtka from "./kurtka.png";
 import shkaf from "./shkaf.png";
 import sumka from "./sumka.png";
-
+import kalonka from "./kalonka.png";
+import shadow from "./shadow.png";
+import frame719 from "./Frame 719.png";
+import frame741 from "./Frame 741.png";
 export default {iphone, apple, gamepat, klaviyatura, monitor, stol, gamepad, camera, 
-    compyuter, phone, smartwatch, headphone, culer, kurtka, shkaf, sumka};
+    compyuter, phone, smartwatch, headphone, culer, kurtka, shkaf, sumka, kalonka, shadow, frame719, frame741};
