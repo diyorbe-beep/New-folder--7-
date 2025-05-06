@@ -24,7 +24,13 @@ import aboutImg1 from './about_img1.png';
 import aboutImg2 from './about_img2.png';
 import aboutImg3 from './about_img3.png';
 import aboutImg4 from './about_img4.png';
+import SingUp from './singUp.png'
 import aboutImg5 from './about_img5.png';
+import psJoy1 from './ps joy1.png'
+import psJoy2 from './ps joy2.png'
+import psJoy3 from './ps joy 3.png'
+import psJoy4 from './ps joy4.png'
+import psJoy5 from './ps joy5.png'
 
 export default {iphone, apple, gamepat, klaviyatura, monitor, stol, gamepad, camera, 
-    compyuter, phone, smartwatch, headphone, culer, kurtka, iphoneIcon, shkaf, ps5, aboutImg1, aboutImg2, aboutImg3, aboutImg4, aboutImg5, sumka, kalonka, shadow, frame719, frame741};
+    compyuter, phone, psJoy1, psJoy2, psJoy3, psJoy4, psJoy5, smartwatch, headphone, culer, kurtka, iphoneIcon, shkaf, SingUp, ps5, aboutImg1, aboutImg2, aboutImg3, aboutImg4, aboutImg5, sumka, kalonka, shadow, frame719, frame741};

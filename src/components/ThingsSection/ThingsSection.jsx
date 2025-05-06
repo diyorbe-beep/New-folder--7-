@@ -35,7 +35,7 @@ export default function ThingsSection() {
             }}
           >
             <SwiperSlide><NavSwiper /></SwiperSlide>
-            <SwiperSlide><NavSwiper /></SwiperSlide>
+            {/* <SwiperSlide><NavSwiper /></SwiperSlide> */}
           </Swiper>
         </div>
       </div>

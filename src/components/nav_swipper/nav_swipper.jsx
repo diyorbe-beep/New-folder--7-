@@ -2,6 +2,8 @@ import React from 'react';
 import imgs from '../../assets/index';
 import { FaArrowRightLong } from "react-icons/fa6";
 const NavSwipper = () => {
+    
+    
     return (
         <div>
             <div className="things_right">

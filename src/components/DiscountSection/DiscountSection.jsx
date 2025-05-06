@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { FaHeart, FaEye } from 'react-icons/fa';
+import { Link } from 'react-router-dom'; // ✅ Add this line
 import imgs from '../../assets/index';
+
 
 export default function Home() {
   const FOUR_DAYS_IN_MS = 4 * 24 * 60 * 60 * 1000;
@@ -133,7 +135,7 @@ export default function Home() {
                     </div>
                     <img src={product.image} alt={product.name} />
                   </div>
-                  <div className="toCard">Add To Cart</div>
+                  <Link to='/Card' className="toCard">Add To Cart</Link>
                   <h1 className="discount_down_card_h2">{product.name}</h1>
                   <p className="discount_down_card_p">
                     {product.price}<span>{product.oldPrice}</span>

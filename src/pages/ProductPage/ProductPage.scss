@@ -1,0 +1,282 @@
+.card_content_p {
+    color: #000000a6;
+    font-size: 14px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-weight: 500;
+}
+
+.card_content_p span {
+    color: #000000;
+}
+
+.card_imgs {
+    display: grid;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card_img1 {
+    width: 170px;
+    height: 138px;
+    background-color: #F5F5F5;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_content{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 140px;
+}
+
+.card_big_img{
+    width: 500px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F5F5;
+}
+
+.card_img_big_div{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.card_right_h1{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.card_right_p1 span{
+    color: #00FF66;
+}
+
+.card_right_p1 {
+    margin-bottom: 16px;
+}
+
+.card_right_h3{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.card_right_h1-2{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.card_right_h1-2_span{
+    background-color: #A0BCE0;
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid #000000;
+}
+
+.card_right_h1-2_span2{
+    background-color: #E07575;
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.card_right_h3_2{
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.card_right_h3_2 span{
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    border:  1px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.active_span3{
+    color: #F5F5F5;
+    background-color: #DB4444;
+}
+
+.card_btn_btn{
+    display: flex;
+    align-items: center;
+    width: 159px;
+    height: 44px;
+    border-radius: 4px;
+    justify-content: space-between;
+    margin-top: 24px;
+    border: 1px solid #000000c0;
+}
+
+.card_btn_btn span{
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card_btn_btn button{
+    width: 40px;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    font-size: 24px;
+}
+
+.card_btn_btns2{
+    background-color: #DB4444;
+    color: #fff;
+}
+
+.card_btns{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.card_btns_btn{
+    width: 165px;
+    height: 44px;
+    margin-top: 24px;
+    background-color: #DB4444;
+    border: 2px solid #DB4444;
+    font-size: 16px;
+    color: #F5F5F5;
+    border-radius: 4px;
+}
+
+.card_btns_btn_icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    margin-top: 26px;
+    border: 1px solid #000000;
+    background-color: #F5F5F5;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 10px;
+}
+
+.card_btns_btn_icon.click{
+    background-color: #DB4444;
+    color: #fff;
+    border: 1px solid #ffffff;
+}
+
+.delivery_up{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 24px 16px;
+}
+
+.delivery_down{
+    display: flex;
+    align-items: center;
+    padding: 24px 16px;
+    gap: 16px;
+}
+
+.delivery{
+    width: 399px;
+    height: auto;
+    border: 1px solid #000000;
+    margin-top: 40px;
+    border-radius: 4px;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+}
+
+.svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+}
+
+.svgIcon path {
+    fill: white;
+}
+
+.button:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: #DB4444;
+    align-items: center;
+}
+
+.button:hover .svgIcon {
+    /* width: 20px; */
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+}
+
+.button::before {
+    position: absolute;
+    bottom: -20px;
+    content: "Back to Top";
+    color: white;
+    transition-duration: .3s;
+    font-size: 0px;
+    text-align: center;
+    display: flex;
+    padding-left: 25%;
+}
+
+.button:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    bottom: unset;
+    /* transform: translateY(-30px); */
+    transition-duration: 0.3s;
+}
+
+.toTop {
+    background-color: #000000;
+    position: fixed;
+    bottom: 20px;
+    left: 90%;
+    transition: .3s;
+    display: none;
+}

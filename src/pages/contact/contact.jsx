@@ -12,8 +12,8 @@ const ContactPage = () => {
             <div className="wrapper">
                 <Navbar />
                 <ContactMain />
-                <Footer />
             </div>
+            <Footer />
         </>
     );
 };
