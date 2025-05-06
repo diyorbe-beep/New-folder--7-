@@ -8,7 +8,8 @@
       align-items: center;
       gap: 88px;
       text-align: center;
-      justify-content: center;
+        cursor: pointer;
+        justify-content: center;
     }
   
     &_card1 {
@@ -34,6 +35,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        .icon{
+          color: #fff;
+          font-size: 40px;
+          margin-top: 10px;
+        }
       }
     }
   }

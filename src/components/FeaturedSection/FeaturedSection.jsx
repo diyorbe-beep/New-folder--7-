@@ -1,4 +1,5 @@
 import React from 'react';
+import imgs from '../../assets/index';
 
 const FeaturedSection = () => {
   return (
@@ -19,6 +20,9 @@ const FeaturedSection = () => {
               <h3 className="featured_card1_h3">PlayStation 5</h3>
               <p className="featured_card1_p">Black and White version of the PS5 coming out on sale.</p>
               <a href="#" className="featured_card1_a">Shop Now</a>
+              <div className="pos_img">
+                {/* <img src={imgs.ps5} alt="" /> */}
+              </div>
             </div>
             <div className="featured_cards">
               <div className="featured_card2">

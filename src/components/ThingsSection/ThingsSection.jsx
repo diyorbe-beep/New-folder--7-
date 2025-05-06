@@ -1,45 +1,44 @@
 import React from 'react';
-import imgs from '../../assets/index';
-import { FaArrowRight } from 'react-icons/fa';
+import NavSwiper from '../nav_swipper/nav_swipper';
 
-const ThingsSection = () => {
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+export default function ThingsSection() {
   return (
     <section className="things">
       <div className="container">
         <div className="things_content">
           <div className="things_left">
-            <p>Woman's Fashion<br />
-              Men's Fashion<br />
-              Electronics<br />
-              Home & Lifestyle<br />
-              Medicine<br />
-              Sports & Outdoor<br />
-              Baby's & Toys<br />
-              Groceries & Pets<br />
-              Health & Beauty</p>
+            <h4>Woman’s Fashion</h4>
+            <h4>Men’s Fashion</h4>
+            <h4>Electronics</h4>
+            <h4>Home & Lifestyle</h4>
+            <h4>Medicine</h4>
+            <h4>Sports & Outdoor</h4>
+            <h4>Baby’s & Toys</h4>
+            <h4>Groceries & Pets</h4>
+            <h4>Health & Beauty</h4>
           </div>
           <div className="hr"></div>
-          <div className="things_right">
-            <div className="things_right_left">
-              <img src={imgs.apple} className="things_right_img" alt="" />
-              <h1 className="things_right_h1">Up to 10% off Voucher</h1>
-              <a className="things_right_a" href="">Shop Now <FaArrowRight /></a>
-            </div>
-            <div className="things_right_right">
-              <img src={imgs.iphone} className="things_right_img2" alt="" />
-            </div>
-            <div className="things_right_spans">
-              <span className="things_right_span1"></span>
-              <span className="things_right_span2"></span>
-              <span className="things_right_span3 active_span"></span>
-              <span className="things_right_span4"></span>
-              <span className="things_right_span5"></span>
-            </div>
-          </div>
+          <Swiper
+            modules={[Autoplay, Pagination, Navigation]}
+            spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+          >
+            <SwiperSlide><NavSwiper /></SwiperSlide>
+            <SwiperSlide><NavSwiper /></SwiperSlide>
+          </Swiper>
         </div>
       </div>
     </section>
   );
-};
-
-export default ThingsSection;
+}

@@ -1,0 +1,73 @@
+.dadsa{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.contact_left{
+    margin-top: 120px;
+    width: 270px;
+    margin-bottom: 191px;
+}
+
+.contact_left p{
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.contact{
+    display: flex;
+    gap: 100px;
+}
+
+.contact_right{
+    margin-top: 181px;
+}
+
+.contact_inputs input{
+    width: 235px;
+    height: 50px;
+    background-color: #f5f5f5;
+    border: none;
+    outline: none;
+    padding: 16px 13px;
+    font-size: 16px;
+}
+
+.contact_inputs{
+    width: 737px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+textarea{
+    width: 737px;
+    height: 207px;
+    background-color: #f5f5f5;
+    border: none;
+    outline: none;
+    padding: 16px 13px;
+    font-size: 16px;
+}
+
+.contact_right_btn{
+    padding: 16px 48px;
+    border: 2px solid transparent;
+    background-color: #DB4444;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 32px;
+    margin-left: end;
+    font-size: 16px;
+    margin-left: 522px;
+    cursor: pointer;
+}
+
+.contact_p{
+    margin-top: 80px;
+    cursor: pointer;
+}
+

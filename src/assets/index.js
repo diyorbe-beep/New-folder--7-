@@ -18,5 +18,13 @@ import kalonka from "./kalonka.png";
 import shadow from "./shadow.png";
 import frame719 from "./Frame 719.png";
 import frame741 from "./Frame 741.png";
+import ps5 from "./ps5.png";
+import iphoneIcon from './iphone_icon.png'; 
+import aboutImg1 from './about_img1.png';
+import aboutImg2 from './about_img2.png';
+import aboutImg3 from './about_img3.png';
+import aboutImg4 from './about_img4.png';
+import aboutImg5 from './about_img5.png';
+
 export default {iphone, apple, gamepat, klaviyatura, monitor, stol, gamepad, camera, 
-    compyuter, phone, smartwatch, headphone, culer, kurtka, shkaf, sumka, kalonka, shadow, frame719, frame741};
+    compyuter, phone, smartwatch, headphone, culer, kurtka, iphoneIcon, shkaf, ps5, aboutImg1, aboutImg2, aboutImg3, aboutImg4, aboutImg5, sumka, kalonka, shadow, frame719, frame741};

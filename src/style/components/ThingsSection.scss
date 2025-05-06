@@ -2,13 +2,16 @@
     &_content {
       display: flex;
       gap: 45px;
+      height: 384px;
+      justify-content: space-between;
     }
-  
     &_right {
       display: flex;
       background: $dark-color;
       padding: 16px 64px;
       position: relative;
+      height: 374px;
+      width: 892px;
   
       &_h1 {
         font-size: 48px;
@@ -62,6 +65,11 @@
       display: flex;
       margin-top: 40px;
       line-height: 40px;
+      flex-direction: column;
+      gap: 0px;
+      h4{
+        font-size: 16px;
+      }
     }
   }
   

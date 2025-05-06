@@ -104,7 +104,8 @@ export default function Home() {
         price: '$375',
         oldPrice: '$400',
         rating: '⭐⭐⭐⭐⭐ (99)'
-      }
+      },
+      
     ];
 
     return (
@@ -142,7 +143,6 @@ export default function Home() {
               ))}
             </div>
             {showViewAll && <button className="discount_btn">View All Products</button>}
-            <hr />
           </div>
         </div>
       </section>

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 import { FaBars, FaXmark, FaMagnifyingGlass, FaHeart, FaCartShopping } from 'react-icons/fa6';
 
 const Header = () => {
@@ -16,18 +18,20 @@ const Header = () => {
             <div className="nav_content">
               <div className="nav_logo">Exclusive</div>
               <ul className="nav_link">
-                <li><a href="/" className="nav_a nav_a1">Home</a></li>
-                <li><a href="/contact" className="nav_a">Contact</a></li>
-                <li><a href="/about" className="nav_a">About</a></li>
-                <li><a href="/signup" className="nav_a">Sign Up</a></li>
+                <li><Link to="/" className="nav_a">Home</Link></li>
+                <li><Link to="/contact" className="nav_a">Contact</Link></li>
+                <li><Link to="/about" className="nav_a">About</Link></li>
+                <li><Link to="/signup" className="nav_a">Sign Up</Link></li>
+
               </ul>
               <div className={`resNav ${isNavOpen ? 'open' : ''}`}>
                 <FaXmark className="close" onClick={toggleNav} />
                 <ul className="nav_link resNav_list">
-                  <li><a href="/" className="nav_a">Home</a></li>
-                  <li><a href="/contact" className="nav_a">Contact</a></li>
-                  <li><a href="/about" className="nav_a">About</a></li>
-                  <li><a href="/signup" className="nav_a">Sign Up</a></li>
+                  <li><Link to="/" className="nav_a">Home</Link></li>
+                  <li><Link to="/contact" className="nav_a">Contact</Link></li>
+                  <li><Link to="/about" className="nav_a">About</Link></li>
+                  <li><Link to="/signup" className="nav_a">Sign Up</Link></li>
+
                 </ul>
               </div>
               <div className="nav_right">
