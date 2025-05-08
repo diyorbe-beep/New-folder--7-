@@ -37,7 +37,7 @@ const Header = () => {
     <header>
       <nav className="nav">
         {/* Profile komponenti - Modal */}
-        <Profile />
+        <Profile isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
 
         <div className="wrapper">
           <div className="navbar">
@@ -76,7 +76,10 @@ const Header = () => {
                 {isLoggedIn ? (
                   <>
                     {/* Modalni ochish */}
-                    <button  isOpen={isModalOpen} onClose={() => setModalOpen(false)}><FaUser className="nav_icon" /></button>
+                    <button className="nav_icon" onClick={() => setModalOpen(prev => !prev)}>
+                      <FaUser  className="nav_icon" />
+                    </button>
+
                     <button onClick={handleLogout} className="nav_a" style={{ border: 'none', background: 'black', color: 'white', cursor: 'pointer', padding: '5px 10px' }}>
                       Sign Out
                     </button>

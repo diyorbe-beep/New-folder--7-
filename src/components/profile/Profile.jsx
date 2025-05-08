@@ -1,15 +1,16 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Profile.scss'
+import './Profile.scss';
 
-const AccountManagement = () => {
+const Profile = ({ isOpen, onClose }) => {
   const navigate = useNavigate();
 
+  if (!isOpen) return null;
+
   const handleLogout = () => {
-    // Perform logout logic here
-    console.log('User logged out');
-    // Redirect to login page or home page after logout
+    localStorage.removeItem('user');
     navigate('/login');
+    window.location.reload();
   };
 
   const menuItems = [
@@ -20,14 +21,14 @@ const AccountManagement = () => {
   ];
 
   return (
-    <div className="account-management">
-      <div className="account-menu">
+    <div className="account-management" onClick={onClose}>
+      <div className="account-menu" onClick={(e) => e.stopPropagation()}>
         <h2>Account</h2>
         <ul className="menu-list">
           {menuItems.map((item) => (
             <li key={item.id} className="menu-item">
-              <button 
-                className="menu-button" 
+              <button
+                className="menu-button"
                 onClick={() => navigate(item.path)}
               >
                 {item.name}
@@ -35,8 +36,8 @@ const AccountManagement = () => {
             </li>
           ))}
           <li className="menu-item">
-            <button 
-              className="menu-button logout" 
+            <button
+              className="menu-button logout"
               onClick={handleLogout}
             >
               Logout
@@ -48,4 +49,4 @@ const AccountManagement = () => {
   );
 };
 
-export default AccountManagement;
+export default Profile;
